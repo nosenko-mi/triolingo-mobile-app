@@ -1,0 +1,2 @@
+C:/Projects/FlutterProjects/triolingo/android/app/.cxx/RelWithDebInfo/6b4c5f3e/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Projects/FlutterProjects/triolingo/android/app/.cxx/RelWithDebInfo/6b4c5f3e/armeabi-v7a/CMakeFiles/rebuild_cache.dir

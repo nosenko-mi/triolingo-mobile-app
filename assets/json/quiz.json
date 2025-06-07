@@ -1,0 +1,72 @@
+{
+    "message":"Here are some quiz questions based on the text provided.",
+    "quizzes":[
+       {
+          "answers":[
+             {
+                "correct":true,
+                "text":"Over-reliance on import tariffs to shield domestic industries"
+             },
+             {
+                "correct":false,
+                "text":"Encouraging foreign direct investment"
+             },
+             {
+                "correct":false,
+                "text":"Promoting free trade agreements"
+             },
+             {
+                "correct":false,
+                "text":"Deregulating key economic sectors"
+             }
+          ],
+          "text":"What is a clear indicator of a struggling emerging-market economy?",
+          "type":"single_answer"
+       },
+       {
+          "answers":[
+             {
+                "correct":true,
+                "text":"It reduces competition"
+             },
+             {
+                "correct":true,
+                "text":"It increases inflation"
+             },
+             {
+                "correct":true,
+                "text":"It hinders economic growth"
+             },
+             {
+                "correct":true,
+                "text":"It can lead to corruption by granting officials power over tariff exceptions"
+             }
+          ],
+          "text":"What are the negative consequences of excessive import tariffs?",
+          "type":"single_answer"
+       },
+       {
+          "answers":[
+             {
+                "correct":true,
+                "text":"Giving government officials the authority to make exceptions to tariffs on a case-by-case basis"
+             },
+             {
+                "correct":false,
+                "text":"Implementing strict regulations on domestic industries"
+             },
+             {
+                "correct":false,
+                "text":"Encouraging competition through subsidies"
+             },
+             {
+                "correct":false,
+                "text":"Reducing government intervention in the economy"
+             }
+          ],
+          "text":"How can excessive import tariffs contribute to widespread corruption?",
+          "type":"single_answer"
+       }
+    ],
+    "error":null
+ }
