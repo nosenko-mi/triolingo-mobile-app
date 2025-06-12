@@ -73,7 +73,7 @@ class HomePageState extends State<HomePage> {
           Align(
             alignment: Alignment.topLeft,
             child: Container(
-              margin: EdgeInsets.only(top: 30, left: 20),
+              margin: EdgeInsets.only(top: 30, left: 20, bottom: 20, right: 20),
               child: Text(
                 'Вітаю, $name',
                 style: TextStyle(fontSize: 36, color: Colors.black),

@@ -22,21 +22,30 @@ class HomePageItem extends StatelessWidget {
             onTap: () {
               switch (data.type) {
                 case QuizType.TEST:
-                  coreApi
-                      .getQuizzesRequest()
-                      .then((response) => {
-                            if (response is Success<QuizResponse> && context.mounted)
-                              Navigator.of(context)
-                                  .pushNamed('/quiz', arguments: response.data)
-                            else if (response is Error && context.mounted)
-                              showDialog(
-                                context: context,
-                                builder: (context) => AlertDialog(
-                                  content: Text(response.meta.message ??
-                                      textGetQuizzesError),
-                                ),
-                              )
-                          });
+                  showModalBottomSheet(
+                      context: context,
+                      builder: (context) {
+                        return QuizLoadingBottomSheet();
+                      });
+
+                  coreApi.getQuizzesRequest().then((response) {
+                    if (context.mounted) {
+                      Navigator.pop(context);
+                    }
+
+                    if (response is Success<QuizResponse> && context.mounted) {
+                      Navigator.of(context)
+                          .pushNamed('/quiz', arguments: response.data);
+                    } else if (response is Error && context.mounted) {
+                      showDialog(
+                        context: context,
+                        builder: (context) => AlertDialog(
+                          content: Text(
+                              response.meta.message ?? textGetQuizzesError),
+                        ),
+                      );
+                    }
+                  });
 
                 case QuizType.EBOOK:
                   Navigator.of(context).pushNamed('/ebook_catalog');
